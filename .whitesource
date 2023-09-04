@@ -3,7 +3,8 @@
     "configMode": "AUTO",
     "configExternalURL": "",
     "projectToken": "",
-    "baseBranches": []
+    "baseBranches": [],
+    "javaVersion": 11
   },
   "checkRunSettings": {
     "vulnerableCheckRunConclusionLevel": "failure",
