@@ -11,5 +11,5 @@ repositories {
 }
 
 dependencies {
-  implementation 'io.netty:netty-codec-http:4.1.39.Final'
+  implementation 'io.netty:netty-codec-http:4.1.71.Final'
 }
