@@ -1,15 +1,31 @@
 plugins {
-	id 'java'
+    id 'java'
+    id 'maven-publish'
 }
 
-version '1.0-Ece-Snapshot'
+group 'org.example'
+version '1.0-SNAPSHOT'
 
 sourceCompatibility = 1.8
 
+publishing {
+    repositories {
+        maven {
+            name = "GitHubPackages"
+            url = "https://maven.pkg.github.com/octocat/hello-world"
+            credentials {
+                username = "haysam.kies@whitesourcesoftware.com"
+                password = "ws4dev2020"
+            }
+        }
+    }
+}
+
 repositories {
-  mavenCentral()
+    mavenCentral()
 }
 
 dependencies {
-  implementation 'io.netty:netty-codec-http:4.1.39.Final'
+    testImplementation 'junit:junit:4.12'
+    implementation 'io.takari:takari-archiver:0.1.18'
 }
